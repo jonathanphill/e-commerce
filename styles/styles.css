@@ -228,6 +228,8 @@ html {
 
 /* site fonts */
 /* site colours */
+/* site fonts */
+/* site colours */
 /* import Jakarta Sans font */
 @font-face {
   font-family: "Jakarta Sans";
@@ -405,4 +407,20 @@ a.button:hover {
 a.button:focus {
   background-color: #084b6d;
   color: #fff;
+}
+
+.skipLink {
+  font-size: 1rem;
+  padding: 10px;
+  background-color: #fff;
+  color: #084b6d;
+  position: absolute;
+  top: 0;
+  z-index: 999;
+  text-align: center;
+  width: 100%;
+  left: -100%;
+}
+.skipLink:focus {
+  left: 0;
 }
