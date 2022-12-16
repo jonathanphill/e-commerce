@@ -228,25 +228,6 @@ html {
 
 /* site fonts */
 /* site colours */
-/* site fonts */
-/* site colours */
-/* import Jakarta Sans font */
-@font-face {
-  font-family: "Jakarta Sans";
-  src: url("../fonts/PlusJakarta_Sans-2.5/webfonts/PlusJakartaSans-Regular.woff"), url("../fonts/PlusJakarta_Sans-2.5/static/PlusJakartaSans-Regular.ttf"), url("../fonts/PlusJakarta_Sans-2.5/webfonts/PlusJakartaSans-Regular.woff2");
-  font-weight: normal;
-}
-/* import Jakarta Sans font in bold */
-@font-face {
-  font-family: "Jakarta Sans";
-  src: url("../fonts/PlusJakarta_Sans-2.5/webfonts/PlusJakartaSans-Bold.woff"), url("../fonts/PlusJakarta_Sans-2.5/webfonts/PlusJakartaSans-Bold.woff2"), url("../fonts/PlusJakarta_Sans-2.5/static/PlusJakartaSans-Bold.ttf");
-  font-weight: bold;
-}
-/* import Young Serif font */
-@font-face {
-  font-family: "Young Serif";
-  src: url("../fonts/youngserif/YoungSerif-Regular.otf");
-}
 html {
   font-size: 125%;
 }
@@ -310,7 +291,7 @@ ul, li, a, input {
 }
 
 ul {
-  list-style-type: none;
+  list-style: none;
 }
 
 a {
@@ -333,7 +314,7 @@ button {
   color: #084b6d;
   background-color: transparent;
   padding: 18px 36px;
-  border: 2px soild #084b6d;
+  border: 2px solid #084b6d;
   font-size: 0.8rem;
   font-weight: bold;
   line-height: 1.2rem;
@@ -393,7 +374,7 @@ a.button {
   background-color: transparent;
   padding: 18px 36px;
   border: 2px solid #084b6d;
-  font-size: 2.8rem;
+  font-size: 0.8rem;
   font-weight: bold;
   line-height: 1.2rem;
   text-align: center;
@@ -423,4 +404,62 @@ a.button:focus {
 }
 .skipLink:focus {
   left: 0;
+}
+
+.navBar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 1px soild rgba(8, 75, 109, 0.08);
+}
+.navBar .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+}
+
+.searchCart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+
+.counter p {
+  background-color: #084b6d;
+  color: #fff;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.slideOutButton {
+  height: 100vh;
+  z-index: 20;
+  background-color: #084b6d;
+  color: #fff;
+  width: 100%;
+  max-width: 500px;
+  position: fixed;
+  top: 0;
+  padding: 35px 50px;
+}
+.slideOutButton .buttonContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.slideOutButton .buttonContainer button {
+  padding: 10px 0 10px 20px;
 }

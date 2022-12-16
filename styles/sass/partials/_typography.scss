@@ -1,28 +1,3 @@
-@import "./variables";
-
-/* import Jakarta Sans font */
-@font-face{
-    font-family: "Jakarta Sans";
-    src: url('../fonts/PlusJakarta_Sans-2.5/webfonts/PlusJakartaSans-Regular.woff'),
-    url('../fonts/PlusJakarta_Sans-2.5/static/PlusJakartaSans-Regular.ttf'),
-    url('../fonts/PlusJakarta_Sans-2.5/webfonts/PlusJakartaSans-Regular.woff2');  
-    font-weight: normal;
-}
-
-/* import Jakarta Sans font in bold */
-@font-face{
-    font-family: "Jakarta Sans";
-    src: url('../fonts/PlusJakarta_Sans-2.5/webfonts/PlusJakartaSans-Bold.woff'),
-    url('../fonts/PlusJakarta_Sans-2.5/webfonts/PlusJakartaSans-Bold.woff2'),
-    url('../fonts/PlusJakarta_Sans-2.5/static/PlusJakartaSans-Bold.ttf');
-    font-weight: bold;
-}
-
-  /* import Young Serif font */
-@font-face{
-    font-family: "Young Serif";
-    src: url('../fonts/youngserif/YoungSerif-Regular.otf');
-}
 html {
     font-size: 125%;
 }
@@ -69,26 +44,30 @@ h5 {
     margin: 0 0 24px 0;
 }
 
-p{
+
+p {
     line-height: 1.5rem;
-    margin:0 0 30px 0;
+    margin: 0 0 30px 0;
     &.smallCopy {
-        font-size: .6rem;
+        font-size: 0.6rem;
         line-height: 1.2rem;
         font-weight: bold;
-        margin:0;
+        margin: 0;
     }
 }
+
 ul, li, a, input {
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
 }
-ul{
-    list-style-type:none;
+
+ul {
+    list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
-    color:inherit;
+    color: inherit;
     cursor: pointer;
-    transition: .3s;
+    transition: 0.3s;
 }
