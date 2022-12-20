@@ -407,6 +407,7 @@ a.button:focus {
 }
 
 .navBar {
+  background-color: #fff;
   position: sticky;
   top: 0;
   z-index: 10;
@@ -450,6 +451,7 @@ a.button:focus {
   max-width: 500px;
   position: fixed;
   top: 0;
+  left: -500px;
   padding: 35px 50px;
 }
 .slideOutButton .buttonContainer {
@@ -462,4 +464,9 @@ a.button:focus {
 }
 .slideOutButton .buttonContainer button {
   padding: 10px 0 10px 20px;
+}
+
+.footer {
+  background-color: #084b6d;
+  color: #fff;
 }
