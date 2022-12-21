@@ -226,6 +226,11 @@ html {
   overflow: hidden;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
 /* site fonts */
 /* site colours */
 html {
@@ -511,4 +516,18 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+header .headerImgContainer {
+  width: 45%;
+}
+
+.headerContent {
+  width: 55%;
+  color: #084b6d;
+}
+.headerContent .contentContainer {
+  width: 65%;
+  margin: 0 auto;
 }
