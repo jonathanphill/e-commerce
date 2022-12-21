@@ -1,46 +1,40 @@
-.categories{
+.categories {
     margin-bottom: 90px;
 }
-.categoryGallery{
-    display:flex;
+
+.categoryGallery {
+    display: flex;
     justify-content: center;
     flex-wrap: wrap;
     text-align: center;
-    width:100%;
+    width: 100%;
 
-    .items{
-        padding: 25px;
-        margin: 50px 25px 25px;
+    .items {
         width: 40%;
-        border-radius: 10%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        img{
+        
+        a {
             border-radius: 10%;
-            width: 100%;
-            margin-bottom: 20px;
-        }
-        transition: .2s ease;
-        &:hover, &:focus{ 
-            transform: scale(.95);
-        }
+            padding: 25px;
+            margin: 50px 25px 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
 
+            img {
+                border-radius: 10%;
+                width: 100%;
+                margin-bottom: 20px;
+            }
+    
+            transition: 0.2s ease;
+    
+            &:hover { transform: scale(0.95); }
+            &:focus { transform: scale(0.95); }
+        }
     }
-}
 
-.item1{
-    background-color: $quinary;
-}
-
-.item2{
-    background-color: $secondary;
-    border: .5px solid black;
-}
-.item3{
-    background-color: $tertiary;
-}
-.item4{
-    background-color: $quaternary;
+    .item1 a { background-color: rgba($quinary, .6); }
+    .item2 a { background-color: $secondary; }
+    .item3 a { background-color: $tertiary; }
+    .item4 a { background-color: $quaternary; }
 }
